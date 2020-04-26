@@ -164,7 +164,7 @@ font-weight: bold;
     }
 
     QTabBar::tab:selected {
-        background: #64a19d;
+        background: #1e1d32;
     }
 
     QTabBar::tab:!selected {
