@@ -18,7 +18,7 @@ QMainWindow {
 
       QWidget .QFrame#frame_2 { /*blue frame */
 
-      	border-image: url(':/images/light/helpthehomeless_logo_horizontal') 0 0 0 0 stretch stretch;;
+      	background-image: url(':/images/light/helpthehomeless_logo_horizontal') 0 0 0 0 stretch stretch;;
         border-style: none;
 	
      }   
