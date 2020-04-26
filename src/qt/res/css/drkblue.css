@@ -1,34 +1,52 @@
-/*************** Frame_3 Logo section*****************/
+/****************************************************************************************/
+                    /*************** GLOBAL STYLE*****************/
+/****************************************************************************************/
 
-    QWidget .QFrame#frame_3 { /* logo */
-
-        border-image: url(':/images/light/helpthehomeless_logo_horizontal') 0 0 0 0 stretch stretch;
-        border-style: none;
+    * {
+        font-size: 12px;
+	    color: #34bcaa;
     }
 
-/************** End Logo  *********************************/
+
+QMainWindow {
+        background-color: #181728;
+        color: #34bcaa;
+
+    }
+
+        /****  If You Want Logo In Buttons Area  ******/
+
+      QWidget .QFrame#frame_blue_3 { /*blue frame */
+
+      	border-image: url(':/images/light/hth_logo_horizontal') 0 0 0 0 stretch stretch;;
+        border-style: none;
+	
+     }   
+
+
+	/****	If You Want Logo In Buttons Area ****/
 
 
     QWidget {
         outline:0;
     }
 
-   WalletFrame {
+    WalletFrame {
         background-color: #181728;
         border-style: none;
-    } 
+    }
 
 
     /* Global Top Style */
     QMenuBar {
 background-color: #181728;
-color: #000;
+color: #34bcaa;
 font-weight: bold;
 }
 
 QMenuBar::item {
 background-color: #181728;
-color: #000;
+color: #34bcaa;
 font-weight: bold;
 }
 
@@ -86,15 +104,10 @@ font-weight: bold;
         color: #000;
         font-weight: bold;
         font-size:12px;
-        min-height: 15px;
-	padding-left:25px;
-	padding-right:25px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	border-top-right-radius: 30px;
-	border-bottom-right-radius: 30px;
-	border-bottom-left-radius: 30px;
-	border-top-left-radius: 30px;
+        padding-left:25px;
+        padding-right:25px;
+        padding-top:5px;
+        padding-bottom:5px;
     }
 
     QPushButton:hover {
@@ -451,7 +464,7 @@ font-weight: bold;
         border-color: #4D458C;
         padding-right:1px;
         padding-left:1px;
-        color:#34bcaa;
+        color:#7E7E7E;
     }
 
     QComboBox QAbstractItemView::item {
@@ -779,25 +792,33 @@ QStatusBar QLabel {
      }
 
 
+    /*************** Frame_blue_3 Logo section*****************/
+
+    QWidget .QFrame#frame_blue_3 { /* logo */
+
+        background-image: url(':/images/drkblue/reden_logo_horizontal');
+        background-repeat:none;
+        background-position: top-right;
+        border-style: none;
+    }
+
+/************** End Logo  *********************************/
+
+ 
 
     /*************** ########bottom_section########*****************/
 
     /* */
-    QWidget .QFrame#frame_4 {
+    QWidget .QFrame#frame_bottom {
 
         background-color:transparent;
-        border-radius: 5px 5px 5px 5px;
-        border-style: inset;
-        border-width:  3px;
-        border-color: #debf12 #34bcaa #34bcaa #debf12;
+        border-style: none;
     }
-
-
 
     /*************** Frame_bottom_1 section Private Send*****************/
    
 
- QWidget .QFrame#listTransactions {  /* bottom frame 2 */
+ QWidget .QFrame#listTransactions_2 {  /* bottom frame 2 */
 	
        border-radius: 5px 5px 5px 5px;
        border-style: inset;
@@ -809,20 +830,19 @@ QStatusBar QLabel {
 	 
      /*************** Frame_bottom_2 section Recent Transactions*****************/
 
-/* RECENT TRANSACTIONS */
 
-QWidget .QFrame#frame_2 { bottom frame 2 - transactions */
+    QWidget .QFrame#frame_bottom_2 { /*bottom frame 2 - transactions */
         background-color: transparent;
         border-style: none;
     }
 
-    QWidget .QFrame#frame_2 .QLabel#label_6 {
+    QWidget .QFrame#frame_bottom_2 .QLabel#label_6 {
         background-color:transparent;
         color: #34bcaa;
         font-size:12px;
     }
 
-    QWidget .QFrame#frame_2 .QLabel#labelTransactionsStatus{
+    QWidget .QFrame#frame_bottom_2 .QLabel#labelTransactionsStatus{
         background-color:transparent;
         color: rgb(255, 15, 15);
         font-size:12px;
@@ -836,11 +856,12 @@ QWidget .QFrame#frame_2 { bottom frame 2 - transactions */
        background-color: #1e13d2
     }
 
-    QWidget .QFrame#frame_2 .QListView { /* Transaction List */
-	color: #34bcaa;       
+    QWidget .QFrame#frame_bottom_2 .QListView { /* Transaction List */
+	   
+	color: #34bcaa !important;    
         font-weight: bold;
         font-size: 12px;
-        margin-left: -66px;  /* CSS Voodoo - set to -66px to hide default transaction icons */
+        margin-left: -60px;
         padding: 0px;
         padding-top: 4px;
         background-color: transparent;
@@ -850,10 +871,7 @@ QWidget .QFrame#frame_2 { bottom frame 2 - transactions */
     .QListView::item { /* Transaction List */
         padding: 10px;
 	background-color: transparent;
-	color: #34bcaa;
-    } 
-
-
+    }
 
 
     /*************** ########bottom status bar########*****************/
@@ -1136,7 +1154,7 @@ QWidget .QFrame#frame_2 { bottom frame 2 - transactions */
     QStackedWidget#SendCoinsEntry .QToolButton#pasteButton:hover {
       background-color:#1e1d32;
       border-radius: 5px;
-      color:#34bcaa;
+      color:#23bcaa;
     }
 
     QStackedWidget#SendCoinsEntry .QToolButton#pasteButton:pressed {
@@ -2109,3 +2127,21 @@ QWidget .QFrame#frame_2 { bottom frame 2 - transactions */
         border: 1px solid;
         border-color: #4D458C;
     }
+
+
+
+.QPushButton#pushButton_Website {
+	
+              onClicked: {
+            Qt.openUrlExternally("https://helpthehomelessworldwide.org/");
+              }
+	
+          }
+
+.QPushButton#pushButton_Website_1 {
+	
+              onClicked: {
+            Qt.openUrlExternally("https://hth.world/");
+              }
+	
+          }
