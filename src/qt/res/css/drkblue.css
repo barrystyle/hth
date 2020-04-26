@@ -14,17 +14,16 @@ QMainWindow {
 
     }
 
-        /****  If You Want Logo In Buttons Area  ******/
+     /*************** Frame_3 Logo section*****************/
 
-      QWidget .QFrame#frame_3 { /*blue frame */
+    QWidget .QFrame#frame_3 { /* logo */
 
-      	background-image: url(':/images/light/helpthehomeless_logo_horizontal') 0 0 0 0 stretch stretch;;
+        border-image: url(':/images/light/helpthehomeless_logo_horizontal') 0 0 0 0 stretch stretch;
         border-style: none;
-	
-     }   
+    }
 
+/************** End Logo  *********************************/
 
-	/****	If You Want Logo In Buttons Area ****/
 
 
     QWidget {
