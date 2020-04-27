@@ -16,7 +16,7 @@ QMainWindow {
 
      /*************** Frame_logo Logo section*****************/
 
-    QFrame#frame_logo { /* logo */
+ QWidget   .QFrame#frame_logo { /* logo */
 
         border-image: url(':/images/light/helpthehomeless_logo_horizontal') 0 0 0 0 stretch stretch;
         border-style: none;
@@ -26,26 +26,17 @@ QMainWindow {
 
 
 
-    QWidget {
-        outline:0;
-    }
-
-    WalletFrame {
-        background-color: #181728;
-        border-style: none;
-    }
-
 
     /* Global Top Style */
     QMenuBar {
 background-color: #181728;
-color: #34bcaa;
+color: #debf12;
 font-weight: bold;
 }
 
 QMenuBar::item {
 background-color: #181728;
-color: #34bcaa;
+color: #debf12;
 font-weight: bold;
 }
 
@@ -58,12 +49,12 @@ background-color: #181728;
 }
 
 QMenu::item {
-color:#34bcaa;
+color:#debf12;
 }
 
 QMenu::item:selected {
 background-color:#34bcaa;
-color:#000;
+color:#debf12;
 font-weight: bold;
 }
 
