@@ -16,12 +16,17 @@ QMainWindow {
 
      /*************** Frame_logo Logo section*****************/
 
- QWidget   .QFrame#frame_logo { /* logo */
+/* QWidget   .QFrame#frame_logo {  logo 
 
         background-image: url(':/images/light/helpthehomeless_logo_horizontal') 0 0 0 0 stretch stretch;
         background-style: none;
-    }
+    } */
 
+ QWidget .QFrame#frame_logo { /* logo */
+
+        background-image: url(':/images/drkblue/reden_logo_horizontal');
+        background-repeat:none;
+}
 /************** End Logo  *********************************/
 
 
@@ -651,17 +656,17 @@ QStatusBar QLabel {
 
      /*************** ########Frame_blue section########*****************/
 
-     QWidget .QFrame#frame_blue { /*blue frame */
-/*
+   /*  QWidget .QFrame#frame_blue { blue frame */
+
         border-image: url(':/images_dblue/frame_blue') 0 0 0 0 stretch stretch;
         background-repeat:none;
-*/
+
         background-image: url(':/images_dblue/frame_blue');
         background-repeat: repeat-xy;
         background-position: left center;
 
         border-style: none;
-     }
+     } */
 
 
     /*************** Frame_blue_1 section*****************/
@@ -784,13 +789,13 @@ QStatusBar QLabel {
 
     /*************** Frame_blue_3 Logo section*****************/
 
-    QWidget .QFrame#frame_blue_3 { /* logo */
+ /*   QWidget .QFrame#frame_2 { logo 
 
-        background-image: url(':/images/drkblue/reden_logo_horizontal');
+        background-image: url(':/images/drkblue/helpthehomeless_logo_horizontal');
         background-repeat:none;
         background-position: top-right;
         border-style: none;
-    }
+    } */
 
 /************** End Logo  *********************************/
 
@@ -812,9 +817,7 @@ QStatusBar QLabel {
 	
        border-radius: 5px 5px 5px 5px;
        border-style: inset;
-       border-width:  3px;
-       border-color: #debf12 #34bcaa #34bcaa #debf12;
-       	 
+       border-width:  3px;       	 
 }
 	 
 	 
@@ -842,8 +845,7 @@ QStatusBar QLabel {
        border-radius: 5px 5px 5px 5px;
        border-style: inset;
        border-width:  3px;
-       border-color: #debf12 #34bcaa #34bcaa #debf12;
-       background-color: #1e13d2
+       background-color: #1e13d2;
     }
 
     QWidget .QFrame#frame_bottom_2 .QListView { /* Transaction List */
