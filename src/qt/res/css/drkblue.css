@@ -656,7 +656,7 @@ QStatusBar QLabel {
 
      /*************** ########Frame_blue section########*****************/
 
-   /*  QWidget .QFrame#frame_blue { blue frame */
+     QWidget .QFrame#frame_blue { blue frame */
 
         border-image: url(':/images_dblue/frame_blue') 0 0 0 0 stretch stretch;
         background-repeat:none;
@@ -666,7 +666,7 @@ QStatusBar QLabel {
         background-position: left center;
 
         border-style: none;
-     } */
+     } 
 
 
     /*************** Frame_blue_1 section*****************/
@@ -787,86 +787,8 @@ QStatusBar QLabel {
      }
 
 
-    /*************** Frame_blue_3 Logo section*****************/
-
- /*   QWidget .QFrame#frame_2 { logo 
-
-        background-image: url(':/images/drkblue/helpthehomeless_logo_horizontal');
-        background-repeat:none;
-        background-position: top-right;
-        border-style: none;
-    } */
-
-/************** End Logo  *********************************/
-
- 
-
-    /*************** ########bottom_section########*****************/
-
-    /* */
-    QWidget .QFrame#frame_bottom {
-
-        background-color:transparent;
-        border-style: none;
-    }
-
-    /*************** Frame_bottom_1 section Private Send*****************/
-   
-
- QWidget .QFrame#listTransactions_2 {  /* bottom frame 2 */
-	
-       border-radius: 5px 5px 5px 5px;
-       border-style: inset;
-       border-width:  3px;       	 
-}
 	 
-	 
-     /*************** Frame_bottom_2 section Recent Transactions*****************/
-
-
-    QWidget .QFrame#frame_bottom_2 { /*bottom frame 2 - transactions */
-        background-color: transparent;
-        border-style: none;
-    }
-
-    QWidget .QFrame#frame_bottom_2 .QLabel#label_6 {
-        background-color:transparent;
-        color: #34bcaa;
-        font-size:12px;
-    }
-
-    QWidget .QFrame#frame_bottom_2 .QLabel#labelTransactionsStatus{
-        background-color:transparent;
-        color: rgb(255, 15, 15);
-        font-size:12px;
-    }
-
-    QWidget#recentTxWidget {  /* bottom frame 2 */
-       border-radius: 5px 5px 5px 5px;
-       border-style: inset;
-       border-width:  3px;
-       background-color: #1e13d2;
-    }
-
-    QWidget .QFrame#frame_bottom_2 .QListView { /* Transaction List */
-	   
-	color: #34bcaa !important;    
-        font-weight: bold;
-        font-size: 12px;
-        margin-left: -60px;
-        padding: 0px;
-        padding-top: 4px;
-        background-color: transparent;
-        border: 0px solid;
-    }
-
-    .QListView::item { /* Transaction List */
-        padding: 10px;
-	background-color: transparent;
-    }
-
-
-    /*************** ########bottom status bar########*****************/
+        /*************** ########bottom status bar########*****************/
 
     QStatusBar {
         color: #34bcaa;
