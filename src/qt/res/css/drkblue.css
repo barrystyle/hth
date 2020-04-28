@@ -16,16 +16,10 @@ QMainWindow {
 
      /*************** Frame_logo Logo section*****************/
 
-/* QWidget   .QFrame#frame_logo {  logo 
 
-        background-image: url(':/images/light/helpthehomeless_logo_horizontal') 0 0 0 0 stretch stretch;
-        background-style: none;
-    } */
-
- QWidget .QFrame#frame_logo { /* logo */
-
-        background-image: url(':/images/drkblue/reden_logo_horizontal');
-        background-repeat:none;
+ QWidget .QFrame#frame_logo { /* Transactions Widget */
+background-image: url(':/images/drkblue/helpthehomeless_logo_horizontal');
+background-repeat:none;
 }
 /************** End Logo  *********************************/
 
