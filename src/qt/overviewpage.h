@@ -67,6 +67,11 @@ private:
   /*  bool fShowAdvancedPSUI; */
     int cachedNumISLocks;
     
+    void setPriceUpdateCheck();
+    GUIUtil::QCLabel *labelPriceInBTC;
+    GUIUtil::QCLabel *labelPriceInUSD;
+    GUIUtil::QPriceInfo *priceInfo;
+    
 /*    TxViewDelegate *txdelegate;
     std::unique_ptr<TransactionFilterProxy> filter; */
     
