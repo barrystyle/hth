@@ -15,6 +15,8 @@
 #include <QString>
 #include <QTableView>
 #include <QLabel>
+#include <QNetworkAccessManager>
+#include <QNetworkReply>
 
 #include <boost/filesystem.hpp>
 
