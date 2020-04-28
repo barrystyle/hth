@@ -257,6 +257,41 @@ namespace GUIUtil
     typedef ClickableProgressBar ProgressBar;
 #endif
 
-} // namespace GUIUtil
+}; // namespace GUIUtil
+
+class QPriceInfo : public QObject
+    {
+        Q_OBJECT
+
+    public:
+        QPriceInfo();
+        ~QPriceInfo(){};
+        void checkPrice();
+        double getPriceInBTC()
+        {
+            return rPriceInBTC;
+        }
+
+        double getPriceInUSD()
+        {
+            return rPriceInUSD;
+        }
+
+    signals:
+        void finished();
+
+    private:
+        QUrl BTCPriceCheckURL;
+        QUrl MagiToUSDPriceCheckURL;
+        double rPriceInBTC;
+        double rPriceInUSD;
+        QNetworkAccessManager mCheckUSDPrice;
+        QNetworkAccessManager mCheckBTCPrice;
+    private slots:
+        void updatePriceInUSD(QNetworkReply* resp);
+        void updatePriceInBTC(QNetworkReply* resp);
+    }
+
+
 
 #endif // BITCOIN_QT_GUIUTIL_H
