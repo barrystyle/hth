@@ -55,9 +55,6 @@
 #include <QTextDocument> // for Qt::mightBeRichText
 #include <QThread>
 #include <QMouseEvent>
-#include <QJsonDocument>
-#include <QJsonObject>
-#include <QJsonArray>
 
 #if QT_VERSION < 0x050000
 #include <QUrl>
@@ -1073,47 +1070,4 @@ namespace GUIUtil {
 		Q_EMIT clicked(event->pos());
 	}
 
-	QPriceInfo::QPriceInfo()
-	{
-		rPriceInBTC = 0.;
-		rPriceInUSD = 0.;
-		// url (temporary) for checking price
-		BTCPriceCheckURL = QUrl("https://api.coingecko.com/api/v3/simple/price?ids=help-the-homeless-coin&vs_currencies=btc/");
-		MagiToUSDPriceCheckURL = QUrl("https://api.coingecko.com/api/v3/simple/price?ids=help-the-homeless-coin&vs_currencies=usd/");
-
-		connect(&mCheckUSDPrice, SIGNAL(finished(QNetworkReply*)), this, SLOT(updatePriceInUSD(QNetworkReply*)));
-		connect(&mCheckBTCPrice, SIGNAL(finished(QNetworkReply*)), this, SLOT(updatePriceInBTC(QNetworkReply*)));
-	}
-
-	void QPriceInfo::checkPrice()
-	{
-		mCheckUSDPrice.get(QNetworkRequest(MagiToUSDPriceCheckURL));
-	}
-
-	void QPriceInfo::updatePriceInUSD(QNetworkReply* resp)
-	{
-		QByteArray bResp = resp->readAll();
-		QJsonDocument jResp = QJsonDocument::fromJson(bResp);
-		QJsonArray jArray = jResp.array();
-		rPriceInUSD = (jArray[0].toObject())["price_usd"].toString().toDouble();
-		/*
-		QJsonDocument jTest( jValue.toObject() );
-		QString qstrshow( jTest.toJson()  );
-		QMessageBox::warning(0, "HTH", qstrshow  );
-		*/
-		mCheckBTCPrice.get(QNetworkRequest(BTCPriceCheckURL));
-	}
-
-	void QPriceInfo::updatePriceInBTC(QNetworkReply* resp)
-	{
-		QByteArray bResp = resp->readAll();
-		QJsonDocument jResp = QJsonDocument::fromJson(bResp);
-		QJsonObject jObject = jResp.object();
-		QJsonArray jArray = jResp.array();
-		rPriceInBTC = (jArray[0].toObject())["price_usd"].toString().toDouble();
-		if (rPriceInBTC > MINFINITESIMAL) {
-			rPriceInBTC = rPriceInUSD / rPriceInBTC;
-		}
-		emit finished();
-	}
 	} // namespace GUIUtil
