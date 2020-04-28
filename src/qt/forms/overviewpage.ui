@@ -465,7 +465,7 @@
         </spacer>
        </item>
        <item>
-        <widget class="QFrame" name="framePrice">
+        <widget class="QFrame" name="frame_logo">
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
          </property>
