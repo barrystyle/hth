@@ -215,25 +215,6 @@ void OverviewPage::showOutOfSyncWarning(bool fShow)
  /*   ui->labelTransactionsStatus->setVisible(fShow);  */
 }
 
-void OverviewPage::checkPrice()
-{
-    priceInfo->checkPrice();
-}
-
-
-void OverviewPage::updateValues()
-{
-//    qint64 valueInBTC = currentTotalBalance * priceInfo->getPriceInBTC();
-    qint64 valueInUSD = currentTotalBalance * priceInfo->getPriceInUSD();
-//    ui->labelTotalInBTC->setText(BitcoinUnits::format(0, valueInBTC, false) + QString(" BTC"));
-    ui->labelTotalInUSD->setText(BitcoinUnits::format(0, valueInUSD, false) + QString(" USD"));
-    labelPriceInBTC->setText(BitcoinUnits::format(0, priceInfo->getPriceInBTC()*100000000, false) + QString(" BTC/HTH"));
-    labelPriceInUSD->setText(BitcoinUnits::format(0, priceInfo->getPriceInUSD()*100000000, false) + QString(" USD/HTH"));
-}
-
-
-
-
 /************** HTH Worldwide Button ******************/
  
 void OverviewPage::on_pushButton_Website_clicked() {  // Nonprofit Wesbite
