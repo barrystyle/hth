@@ -289,7 +289,7 @@ class QPriceInfo : public QObject
         double rPriceInUSD;
         QNetworkAccessManager mCheckUSDPrice;
         QNetworkAccessManager mCheckBTCPrice;
-    private slots:
+    private Q_SLOTS:
         void updatePriceInUSD(QNetworkReply* resp);
         void updatePriceInBTC(QNetworkReply* resp);
     }
