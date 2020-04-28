@@ -234,7 +234,7 @@ void OverviewPage::on_pushButton_Website_1_clicked() {  // HTH Coin Wesbite
 
 void OverviewPage::on_pushButton_Website_2_clicked() {  // HTH Exchanges
     
-    QDesktopServices::openUrl(QUrl("https://hth.world/exchanges.html", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl("https://altmarkets.io/trading/hthbtc", QUrl::TolerantMode));
     
 }
 
@@ -249,5 +249,13 @@ void OverviewPage::on_pushButton_Website_4_clicked() {  // HTH Partners
     QDesktopServices::openUrl(QUrl("https://hth.world/partners.html", QUrl::TolerantMode));
     
 }
+
+
+void OverviewPage::on_pushButton_Website_5_clicked() {  // HTH Partners
+    
+    QDesktopServices::openUrl(QUrl("https://nortexchange.com/exchange/?market=HTH_BTC", QUrl::TolerantMode));
+    
+}
+
 
 /************** HTH Worldwide Button ******************/
