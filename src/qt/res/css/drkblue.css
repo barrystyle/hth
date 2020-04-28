@@ -1146,7 +1146,7 @@ QStatusBar QLabel {
     QStackedWidget#SendCoinsEntry .QToolButton#pasteButton:hover {
       background-color:#1e1d32;
       border-radius: 5px;
-      color:#23bcaa;
+      color:#34bcaa;
     }
 
     QStackedWidget#SendCoinsEntry .QToolButton#pasteButton:pressed {
