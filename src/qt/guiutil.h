@@ -261,39 +261,4 @@ namespace GUIUtil
 
 }; // namespace GUIUtil
 
-class QPriceInfo : public QObject
-    {
-        Q_OBJECT
-
-    public:
-        QPriceInfo();
-        ~QPriceInfo(){};
-        void checkPrice();
-        double getPriceInBTC()
-        {
-            return rPriceInBTC;
-        }
-
-        double getPriceInUSD()
-        {
-            return rPriceInUSD;
-        }
-
-    Q_SIGNALS:
-        void finished();
-
-    private:
-        QUrl BTCPriceCheckURL;
-        QUrl MagiToUSDPriceCheckURL;
-        double rPriceInBTC;
-        double rPriceInUSD;
-        QNetworkAccessManager mCheckUSDPrice;
-        QNetworkAccessManager mCheckBTCPrice;
-    private Q_SLOTS:
-        void updatePriceInUSD(QNetworkReply* resp);
-        void updatePriceInBTC(QNetworkReply* resp);
-    };
-
-
-
 #endif // BITCOIN_QT_GUIUTIL_H
