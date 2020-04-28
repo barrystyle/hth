@@ -291,7 +291,7 @@ class QPriceInfo : public QObject
         QNetworkAccessManager mCheckBTCPrice;
     private Q_SLOTS:
         void updatePriceInUSD(QNetworkReply* resp);
-        void updatePriceInBTC(QNetworkReply* resp);
+        void updatePriceInBTC(QNetworkReply* resp)
     }
 
 
