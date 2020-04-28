@@ -94,6 +94,11 @@ private Q_SLOTS:
     void on_pushButton_Website_4_clicked();
     void on_pushButton_Website_5_clicked();
     void updateBlockChainInfo();
+    
+    void handleTransactionClicked(const QModelIndex &index);
+    void timerUpdate();
+    void checkForUpdates();
+    void checkPrice();
 };
 
 #endif // BITCOIN_QT_OVERVIEWPAGE_H
