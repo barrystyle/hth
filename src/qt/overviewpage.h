@@ -66,12 +66,7 @@ private:
     int nDisplayUnit;
   /*  bool fShowAdvancedPSUI; */
     int cachedNumISLocks;
-    
-    void setPriceUpdateCheck();
-    GUIUtil::QCLabel *labelPriceInBTC;
-    GUIUtil::QCLabel *labelPriceInUSD;
-    GUIUtil::QPriceInfo *priceInfo;
-    
+        
 /*    TxViewDelegate *txdelegate;
     std::unique_ptr<TransactionFilterProxy> filter; */
     
@@ -95,10 +90,6 @@ private Q_SLOTS:
     void on_pushButton_Website_5_clicked();
     void updateBlockChainInfo();
     
-    void handleTransactionClicked(const QModelIndex &index);
-    void timerUpdate();
-    void checkForUpdates();
-    void checkPrice();
-};
+ };
 
 #endif // BITCOIN_QT_OVERVIEWPAGE_H
