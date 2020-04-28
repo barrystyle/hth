@@ -277,7 +277,7 @@ class QPriceInfo : public QObject
             return rPriceInUSD;
         }
 
-    signals:
+    Q_SIGNALS:
         void finished();
 
     private:
