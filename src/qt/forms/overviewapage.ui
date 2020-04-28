@@ -130,9 +130,6 @@
            <property name="layoutDirection">
             <enum>Qt::LeftToRight</enum>
            </property>
-           <property name="styleSheet">
-            <string notr="true">box-shadow: 0 4px 8px 0 #34bcaa, 0 6px 20px 0 #34bcaa;</string>
-           </property>
            <property name="frameShape">
             <enum>QFrame::StyledPanel</enum>
            </property>
