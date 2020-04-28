@@ -1115,6 +1115,5 @@ void QPriceInfo::updatePriceInBTC(QNetworkReply* resp)
         rPriceInBTC = rPriceInUSD / rPriceInBTC;
     }
     emit finished();
-}
 
 } // namespace GUIUtil
