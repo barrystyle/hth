@@ -72,13 +72,7 @@ OverviewPage::OverviewPage(const PlatformStyle *platformStyle, QWidget *parent) 
     timerinfo_blockchain = new QTimer(this);
     connect(timerinfo_blockchain, SIGNAL(timeout()), this, SLOT(updateBlockChainInfo()));
     timerinfo_blockchain->start(1000); //30sec      
-        
-    // check price
-    connect(this, SIGNAL(valueChanged()), this, SLOT(updateValues()));
-    priceInfo = new GUIUtil::QPriceInfo();
-    setPriceUpdateCheck();
-    checkPrice();  
-      
+              
     // start with displaying the "out of sync" warnings
     showOutOfSyncWarning(true);
 
@@ -213,77 +207,6 @@ void OverviewPage::updateBlockChainInfo()
 }
 
                 /**** End Blockchain Information ******/
-
-
-                /**** Price Information ****/
-
-void OverviewPage::setPriceUpdateCheck()
-{
-    /*
-    QLabel *labelPriceText = new QLabel(ui->frameBalance);
-    labelPriceText->setObjectName(QStringLiteral("labelPriceText"));
-    QFont font1;
-    font1.setPointSize(9);
-    labelPriceText->setFont(font1);
-//    labelPriceText->setStyleSheet(QStringLiteral("color: #464747;"));
-    labelPriceText->setText("Price:");
-    ui->formLayout_3->setWidget(0, QFormLayout::LabelRole, labelPriceText);
-    */
-
-    QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
-    sizePolicy.setHorizontalStretch(0);
-    sizePolicy.setVerticalStretch(0);
-
-    QFont font2;
-    font2.setPointSize(BAL_FONT_SIZE);
-    font2.setBold(false);
-    font2.setWeight(QFont::Normal);
-    labelPriceInBTC = new GUIUtil::QCLabel("", ui->frameBalance);
-    sizePolicy.setHeightForWidth(labelPriceInBTC->sizePolicy().hasHeightForWidth());
-    labelPriceInBTC->setSizePolicy(sizePolicy);
-
-    labelPriceInBTC->setObjectName(QStringLiteral("labelPriceInBTC"));
-    labelPriceInBTC->setFont(font2);
-    labelPriceInBTC->setLayoutDirection(Qt::LeftToRight);
-//    labelPriceInBTC->setStyleSheet(QStringLiteral("color: #1D62F0;"));
-    labelPriceInBTC->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
-    labelPriceInBTC->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse);
-    labelPriceInBTC->setToolTip(QApplication::translate("OverviewPage", "Price in BTC, click to refresh", 0));
-    labelPriceInBTC->setText(QApplication::translate("OverviewPage", "0 BTC/HTH", 0));
-
-    labelPriceInUSD = new GUIUtil::QCLabel("", ui->frameBalance);
-    sizePolicy.setHeightForWidth(labelPriceInUSD->sizePolicy().hasHeightForWidth());
-    labelPriceInUSD->setSizePolicy(sizePolicy);
-
-    labelPriceInUSD->setObjectName(QStringLiteral("labelPriceInUSD"));
-    labelPriceInUSD->setFont(font2);
-    labelPriceInUSD->setLayoutDirection(Qt::LeftToRight);
-//    labelPriceInUSD->setStyleSheet(QStringLiteral("color: #1D62F0;"));
-    labelPriceInUSD->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
-    labelPriceInUSD->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse);
-    labelPriceInUSD->setToolTip(QApplication::translate("OverviewPage", "Price in USD, click to refresh", 0));
-    labelPriceInUSD->setText(QApplication::translate("OverviewPage", "0 USD/HTH", 0));
-
-#ifdef Q_OS_MAC
-    ui->labelPriceText->setMinimumWidth(98);
-#else
-#ifdef Q_OS_WIN
-    ui->labelPriceText->setMinimumWidth(93);
-#else
-    ui->labelPriceText->setMinimumWidth(100);
-#endif
-#endif
-    ui->formLayout_3->setWidget(0, QFormLayout::FieldRole, labelPriceInBTC);
-    ui->formLayout_3->setWidget(1, QFormLayout::FieldRole, labelPriceInUSD);
-
-    connect(labelPriceInBTC, SIGNAL(clicked()), this, SLOT(checkPrice()));
-    connect(labelPriceInUSD, SIGNAL(clicked()), this, SLOT(checkPrice()));
-    connect(priceInfo, SIGNAL(finished()), this, SLOT(updateValues()));
-}
-
-
-      /**** End Price Information ****/
-
 
 void OverviewPage::showOutOfSyncWarning(bool fShow)
 {
