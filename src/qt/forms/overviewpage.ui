@@ -484,6 +484,9 @@
            <height>0</height>
           </size>
          </property>
+         <property name="styleSheet">
+          <string notr="true">background-image: url(':/images/light/helpthehomeless_logo_horizontal') 0 0 0 0 stretch stretch;</string>
+         </property>
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
          </property>
