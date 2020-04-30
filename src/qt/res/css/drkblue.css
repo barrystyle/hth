@@ -18,8 +18,8 @@ QMainWindow {
 
 
  QWidget .QFrame#frame_logo { /* Transactions Widget */
-background-image: url(':/images/drkblue/helpthehomeless_logo_horizontal');
-background-repeat:none;
+border-image: url(':/images/drkblue/helpthehomeless_logo_horizontal');
+border-style:none;
 }
 /************** End Logo  *********************************/
 
