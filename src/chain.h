@@ -498,6 +498,6 @@ public:
 
     /** Find the earliest block with timestamp equal or greater than the given. */
     CBlockIndex* FindEarliestAtLeast(int64_t nTime) const;
-    
+};
 
 #endif // BITCOIN_CHAIN_H
