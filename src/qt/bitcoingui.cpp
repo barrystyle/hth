@@ -302,7 +302,11 @@ BitcoinGUI::BitcoinGUI(const PlatformStyle *_platformStyle, const NetworkStyle *
 #endif // QT_NO_TOOLTIP
     www->setText(QApplication::translate("OverviewPage", "<a href=\"https://wheretomine.io/coins/helpthehomeless\"><img src=\":/icons/www\" width=\"21\" height=\"21\"></a>", nullptr));
              
-    frameSocialLayout->addWidget(www);  
+    frameSocialLayout->addWidget(www);         
+    frameSocialLayout->addWidget(github);
+    frameSocialLayout->addWidget(mcm);
+    frameSocialLayout->addWidget(twitter);
+    frameSocialLayout->addWidget(discord);
    /* frameSocialLayout->addWidget(webs);  // Links Not Used
     frameSocialLayout->addWidget(web); */  // Links Not Used
             
@@ -351,6 +355,7 @@ BitcoinGUI::BitcoinGUI(const PlatformStyle *_platformStyle, const NetworkStyle *
         progressBar->setStyleSheet("QProgressBar { background-color: #34bcaa; border: 1px solid grey; border-radius: 7px; padding: 1px; text-align: center; } QProgressBar::chunk { background: QLinearGradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #34bcaa, stop: 1 #debf12); border-radius: 7px; margin: 0px; }");
     }
 
+    statusBar()->addWidget(frameSocial);
     statusBar()->addWidget(progressBarLabel);
     statusBar()->addWidget(progressBar);
     statusBar()->addPermanentWidget(frameBlocks);
