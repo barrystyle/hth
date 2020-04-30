@@ -823,7 +823,7 @@ font-size: 20px;</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font-size: 30px;</string>
+       <string notr="true">font-size: 30px, font-color: #debf12;</string>
       </property>
       <property name="text">
        <string>HTH Information</string>
