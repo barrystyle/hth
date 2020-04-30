@@ -822,20 +822,17 @@ font-size: 20px;</string>
         <height>181</height>
        </rect>
       </property>
-      <widget class="QFrame" name="frame_logo">
+      <widget class="QLabel" name="label_6">
        <property name="geometry">
         <rect>
-         <x>29</x>
-         <y>59</y>
-         <width>261</width>
-         <height>101</height>
+         <x>20</x>
+         <y>40</y>
+         <width>281</width>
+         <height>111</height>
         </rect>
        </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Raised</enum>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://www.helpthehomelessworldwide.org&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;HTH Worldwide&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
      </widget>
