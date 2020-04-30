@@ -833,6 +833,26 @@ color: #debf12;</string>
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>229</y>
+        <width>351</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <widget class="QFrame" name="frame_2">
+       <property name="geometry">
+        <rect>
+         <x>29</x>
+         <y>9</y>
+         <width>301</width>
+         <height>71</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
     </widget>
    </item>
   </layout>
