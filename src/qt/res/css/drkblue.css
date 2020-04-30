@@ -14,39 +14,28 @@ QMainWindow {
 
     }
 
+     /*************** Frame_logo Logo section*****************/
 
-      /*************** Frame_3 Logo section*****************/
+ QWidget .QFrame#frame_logo { /* logo */
 
-    QWidget .QFrame#frame_logo { /* logo */
-
-        border-image: url(':/images/light/helpthehomeless_logo_horizontal') 0 0 0 0 stretch stretch;
-        border-style: none;
-    }
-
+        border-image: url(':/images/drkblue/reden_logo_horizontal');
+        border-style:none;
+}
 /************** End Logo  *********************************/
 
 
-
-    QWidget {
-        outline:0;
-    }
-
-    WalletFrame {
-        background-color: #181728;
-        border-style: none;
-    }
 
 
     /* Global Top Style */
     QMenuBar {
 background-color: #181728;
-color: #000;
+color: #debf12;
 font-weight: bold;
 }
 
 QMenuBar::item {
 background-color: #181728;
-color: #000;
+color: #debf12;
 font-weight: bold;
 }
 
@@ -59,12 +48,12 @@ background-color: #181728;
 }
 
 QMenu::item {
-color:#34bcaa;
+color:#debf12;
 }
 
 QMenu::item:selected {
-background-color:#34bcaa;
-color:#000;
+background-color:#181728;
+color:#debf12;
 font-weight: bold;
 }
 
@@ -104,15 +93,10 @@ font-weight: bold;
         color: #000;
         font-weight: bold;
         font-size:12px;
-        min-height: 15px;
-	padding-left:25px;
-	padding-right:25px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	border-top-right-radius: 30px;
-	border-bottom-right-radius: 30px;
-	border-bottom-left-radius: 30px;
-	border-top-left-radius: 30px;
+        padding-left:25px;
+        padding-right:25px;
+        padding-top:5px;
+        padding-bottom:5px;
     }
 
     QPushButton:hover {
@@ -169,7 +153,7 @@ font-weight: bold;
     }
 
     QTabBar::tab:selected {
-        background: #64a19d;
+        background: #1e1d32;
     }
 
     QTabBar::tab:!selected {
@@ -469,7 +453,7 @@ font-weight: bold;
         border-color: #4D458C;
         padding-right:1px;
         padding-left:1px;
-        color:#34bcaa;
+        color:#7E7E7E;
     }
 
     QComboBox QAbstractItemView::item {
@@ -626,7 +610,7 @@ border:0px solid #34bcaa;
 min-height:2.5em;
 min-width: 8em;
 padding: 0em 1em;
-color:#000;
+color:#34bcaa;
 }
 
 QToolBar > QToolButton:checked {
@@ -666,17 +650,17 @@ QStatusBar QLabel {
 
      /*************** ########Frame_blue section########*****************/
 
-     QWidget .QFrame#frame_blue { /*blue frame */
-/*
+     QWidget .QFrame#frame_blue { blue frame */
+
         border-image: url(':/images_dblue/frame_blue') 0 0 0 0 stretch stretch;
         background-repeat:none;
-*/
+
         background-image: url(':/images_dblue/frame_blue');
         background-repeat: repeat-xy;
         background-position: left center;
 
         border-style: none;
-     }
+     } 
 
 
     /*************** Frame_blue_1 section*****************/
@@ -797,84 +781,8 @@ QStatusBar QLabel {
      }
 
 
-
-    /*************** ########bottom_section########*****************/
-
-    /* */
-    QWidget .QFrame#frame_4 {
-
-        background-color:transparent;
-        border-radius: 5px 5px 5px 5px;
-        border-style: inset;
-        border-width:  3px;
-        border-color: #debf12 #34bcaa #34bcaa #debf12;
-    }
-
-
-
-    /*************** Frame_bottom_1 section Private Send*****************/
-   
-
- QWidget .QFrame#listTransactions {  /* bottom frame 2 */
-	
-       border-radius: 5px 5px 5px 5px;
-       border-style: inset;
-       border-width:  3px;
-       border-color: #debf12 #34bcaa #34bcaa #debf12;
-       	 
-}
 	 
-	 
-     /*************** Frame_bottom_2 section Recent Transactions*****************/
-
-/* RECENT TRANSACTIONS */
-
-QWidget .QFrame#frame_2 { bottom frame 2 - transactions */
-        background-color: transparent;
-        border-style: none;
-    }
-
-    QWidget .QFrame#frame_2 .QLabel#label_6 {
-        background-color:transparent;
-        color: #34bcaa;
-        font-size:12px;
-    }
-
-    QWidget .QFrame#frame_2 .QLabel#labelTransactionsStatus{
-        background-color:transparent;
-        color: rgb(255, 15, 15);
-        font-size:12px;
-    }
-
-    QWidget#recentTxWidget {  /* bottom frame 2 */
-       border-radius: 5px 5px 5px 5px;
-       border-style: inset;
-       border-width:  3px;
-       border-color: #debf12 #34bcaa #34bcaa #debf12;
-       background-color: #1e13d2
-    }
-
-    QWidget .QFrame#frame_2 .QListView { /* Transaction List */
-	color: #34bcaa;       
-        font-weight: bold;
-        font-size: 12px;
-        margin-left: -66px;  /* CSS Voodoo - set to -66px to hide default transaction icons */
-        padding: 0px;
-        padding-top: 4px;
-        background-color: transparent;
-        border: 0px solid;
-    }
-
-    .QListView::item { /* Transaction List */
-        padding: 10px;
-	background-color: transparent;
-	color: #34bcaa;
-    } 
-
-
-
-
-    /*************** ########bottom status bar########*****************/
+        /*************** ########bottom status bar########*****************/
 
     QStatusBar {
         color: #34bcaa;
@@ -2127,3 +2035,21 @@ QWidget .QFrame#frame_2 { bottom frame 2 - transactions */
         border: 1px solid;
         border-color: #4D458C;
     }
+
+
+
+.QPushButton#pushButton_Website {
+	
+              onClicked: {
+            Qt.openUrlExternally("https://helpthehomelessworldwide.org/");
+              }
+	
+          }
+
+.QPushButton#pushButton_Website_1 {
+	
+              onClicked: {
+            Qt.openUrlExternally("https://hth.world/");
+              }
+	
+          }
