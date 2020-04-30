@@ -17,9 +17,7 @@ QMainWindow {
      /*************** Frame_logo Logo section*****************/
 
  QWidget .QFrame#frame_logo { /*logo */
-
-        background-image: url(':/images/drkblue/helpthehomeless_logo_horizontal');
-        background-repeat:none;
+	border-image: url(:/images/drkblue/helpthehomeless_logo_horizontal') 0 0 0 0 stretch stretch;
         border-style: none;
     }
 /************** End Logo  *********************************/
