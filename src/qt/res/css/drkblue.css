@@ -16,11 +16,11 @@ QMainWindow {
 
      /*************** Frame_logo Logo section*****************/
 
-/* QMainWindow .QFrame#frame_logo {  logo 
+ QWidget .QFrame#frame_logo {  logo 
 
-        border-image: url(':/images/drkblue/reden_logo_horizontal');
+        border-image: url(':/images/drkblue/helpthehomeless_logo_horizontal');
         border-style:none;
-} */
+} 
 
 /************** End Logo  *********************************/
 
