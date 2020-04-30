@@ -82,11 +82,6 @@
         <layout class="QHBoxLayout" name="horizontalLayout_14">
          <item alignment="Qt::AlignLeft|Qt::AlignVCenter">
           <widget class="QLabel" name="label">
-           <property name="styleSheet">
-            <string notr="true">border: transparent;
-font-size: 20px;
-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(52, 188, 170, 0), stop:1 rgba(222,191,18, 0.8));</string>
-           </property>
            <property name="text">
             <string>Block Height</string>
            </property>
