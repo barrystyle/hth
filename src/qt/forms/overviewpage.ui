@@ -82,6 +82,11 @@
         <layout class="QHBoxLayout" name="horizontalLayout_14">
          <item alignment="Qt::AlignLeft|Qt::AlignVCenter">
           <widget class="QLabel" name="label">
+           <property name="styleSheet">
+            <string notr="true">border: transparent;
+font-size: 20px;
+color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(52, 188, 170, 0), stop:1 rgba(222,191,18, 0.8));</string>
+           </property>
            <property name="text">
             <string>Block Height</string>
            </property>
@@ -809,21 +814,20 @@ font-size: 20px;</string>
        </item>
       </layout>
      </widget>
-     <widget class="QLabel" name="label_6">
+     <widget class="QWidget" name="frame_logo" native="true">
       <property name="geometry">
        <rect>
-        <x>680</x>
-        <y>90</y>
-        <width>261</width>
+        <x>650</x>
+        <y>80</y>
+        <width>281</width>
         <height>91</height>
        </rect>
       </property>
-      <property name="styleSheet">
-       <string notr="true">background-image: url(':/images/drkblue/helpthehomeless_logo_horizontal');
-background-repeat:none;</string>
-      </property>
-      <property name="text">
-       <string/>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
       </property>
      </widget>
     </widget>
