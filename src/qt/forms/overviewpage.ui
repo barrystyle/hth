@@ -84,8 +84,7 @@
           <widget class="QLabel" name="label">
            <property name="styleSheet">
             <string notr="true">border: transparent;
-font-size: 20px;
-color: linear-gradient(to bottom, #34bcaa 0%, #debf12 100%);</string>
+font-size: 20px;</string>
            </property>
            <property name="text">
             <string>Block Height</string>
@@ -112,8 +111,7 @@ color: linear-gradient(to bottom, #34bcaa 0%, #debf12 100%);</string>
           <widget class="QLabel" name="label_24hblockchaininfo_1">
            <property name="styleSheet">
             <string notr="true">border: transparent;
-font-size: 20px;
-color: linear-gradient(to bottom, #34bcaa 0%, #debf12 100%);</string>
+font-size: 20px;</string>
            </property>
            <property name="text">
             <string>Network Hashrate</string>
@@ -403,8 +401,7 @@ color: linear-gradient(to bottom, #34bcaa 0%, #debf12 100%);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font-size: 20px;
-color: linear-gradient(to bottom, #34bcaa 0%, #debf12 100%);</string>
+       <string notr="true">font-size: 20px;</string>
       </property>
       <property name="text">
        <string>HTH Worldwide</string>
@@ -420,8 +417,7 @@ color: linear-gradient(to bottom, #34bcaa 0%, #debf12 100%);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font-size: 20px;
-color: linear-gradient(to bottom, #34bcaa 0%, #debf12 100%);</string>
+       <string notr="true">font-size: 20px;</string>
       </property>
       <property name="text">
        <string>HTH Coin</string>
@@ -437,8 +433,7 @@ color: linear-gradient(to bottom, #34bcaa 0%, #debf12 100%);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font-size: 20px;
-color: linear-gradient(to bottom, #34bcaa 0%, #debf12 100%);</string>
+       <string notr="true">font-size: 20px;</string>
       </property>
       <property name="text">
        <string>HTH Exchanges</string>
