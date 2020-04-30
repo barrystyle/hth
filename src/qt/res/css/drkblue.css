@@ -16,11 +16,12 @@ QMainWindow {
 
      /*************** Frame_logo Logo section*****************/
 
- QMainWindow .QFrame#frame_logo { /* logo */
+/* QMainWindow .QFrame#frame_logo {  logo 
 
         border-image: url(':/images/drkblue/reden_logo_horizontal');
         border-style:none;
-}
+} */
+
 /************** End Logo  *********************************/
 
 
