@@ -823,7 +823,8 @@ font-size: 20px;</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font-size: 30px, font-color: #debf12;</string>
+       <string notr="true">font-size: 30px;
+font-size: #debf12;</string>
       </property>
       <property name="text">
        <string>HTH Information</string>
@@ -840,6 +841,10 @@ font-size: 20px;</string>
         <width>331</width>
         <height>151</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(':res/images/drkblue/helpthehomeless_logo_horizontal.png');
+        border-style:none;</string>
       </property>
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
