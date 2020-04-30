@@ -213,95 +213,6 @@ font-size: 20px;</string>
         </widget>
        </item>
        <item>
-        <widget class="QFrame" name="frame_2">
-         <property name="frameShape">
-          <enum>QFrame::StyledPanel</enum>
-         </property>
-         <property name="frameShadow">
-          <enum>QFrame::Raised</enum>
-         </property>
-         <widget class="QLabel" name="label_CurrentBlockReward">
-          <property name="geometry">
-           <rect>
-            <x>10</x>
-            <y>20</y>
-            <width>71</width>
-            <height>16</height>
-           </rect>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">font-size: 15px;</string>
-          </property>
-          <property name="text">
-           <string>Reward:</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignVCenter</set>
-          </property>
-         </widget>
-         <widget class="QLabel" name="label_CurrentBlockReward_value">
-          <property name="geometry">
-           <rect>
-            <x>140</x>
-            <y>20</y>
-            <width>81</width>
-            <height>16</height>
-           </rect>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">font-size: 15px;</string>
-          </property>
-          <property name="lineWidth">
-           <number>0</number>
-          </property>
-          <property name="text">
-           <string>0</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
-          </property>
-         </widget>
-         <widget class="QLabel" name="label_Supply">
-          <property name="geometry">
-           <rect>
-            <x>240</x>
-            <y>20</y>
-            <width>91</width>
-            <height>16</height>
-           </rect>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">font-size: 15px;</string>
-          </property>
-          <property name="text">
-           <string>Coin supply:</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignVCenter</set>
-          </property>
-         </widget>
-         <widget class="QLabel" name="label_Supply_value">
-          <property name="geometry">
-           <rect>
-            <x>340</x>
-            <y>20</y>
-            <width>81</width>
-            <height>20</height>
-           </rect>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">font-size: 15px;</string>
-          </property>
-          <property name="text">
-           <string>0</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-          </property>
-         </widget>
-        </widget>
-       </item>
-       <item>
         <spacer name="verticalSpacer">
          <property name="orientation">
           <enum>Qt::Vertical</enum>
@@ -312,7 +223,7 @@ font-size: 20px;</string>
          <property name="sizeHint" stdset="0">
           <size>
            <width>20</width>
-           <height>86</height>
+           <height>135</height>
           </size>
          </property>
         </spacer>
