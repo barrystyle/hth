@@ -858,7 +858,7 @@ margin-left:0px;
     font-weight: bold;
 }
 
-QWidget .QFrame#frame_blue_4 .QLabel#labelWatchAvailable { /* Watch-only Balance */
+QWidget .QFrame#frame_blue_2 .QLabel#labelWatchAvailable { /* Watch-only Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:12px;
 margin-left:16px;
