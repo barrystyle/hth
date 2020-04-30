@@ -16,7 +16,7 @@ QMainWindow {
 
      /*************** Frame_logo Logo section*****************/
 
- QFrame .QFrame#frame_logo { /* logo */
+ QMainWindow .QFrame#frame_logo { /* logo */
 
         border-image: url(':/images/drkblue/reden_logo_horizontal');
         border-style:none;
