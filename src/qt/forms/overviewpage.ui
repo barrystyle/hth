@@ -84,7 +84,8 @@
           <widget class="QLabel" name="label">
            <property name="styleSheet">
             <string notr="true">border: transparent;
-font-size: 20px;</string>
+font-size: 20px;
+</string>
            </property>
            <property name="text">
             <string>Block Height</string>
@@ -813,31 +814,21 @@ font-size: 20px;</string>
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="widget" native="true">
+     <widget class="QFrame" name="frame_logo">
       <property name="geometry">
        <rect>
-        <x>629</x>
-        <y>9</y>
-        <width>341</width>
-        <height>201</height>
+        <x>639</x>
+        <y>99</y>
+        <width>321</width>
+        <height>91</height>
        </rect>
       </property>
-      <widget class="QFrame" name="frame_logo">
-       <property name="geometry">
-        <rect>
-         <x>19</x>
-         <y>59</y>
-         <width>301</width>
-         <height>121</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Raised</enum>
-       </property>
-      </widget>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
      </widget>
     </widget>
    </item>
