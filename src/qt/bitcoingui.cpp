@@ -67,6 +67,7 @@
 #include <QtNetwork/QNetworkReply>
 #include <QGraphicsDropShadowEffect>
 #include <QDesktopServices>
+#include <QGradient>
 
 #if QT_VERSION < 0x050000
 #include <QTextDocument>
