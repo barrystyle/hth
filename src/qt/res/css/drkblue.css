@@ -4,7 +4,7 @@
 
     * {
         font-size: 12px;
-	color: qlineargradient(spreadad, x1:0 y1:0, x2:[B]100[/B] y2:0, stop:0 rgba(52,188,170, 0.8), stop:1 rgba(222,191,18, 0.8));
+	color: #34bcaa;;
     }
 
 
@@ -16,9 +16,9 @@ QMainWindow {
 
      /*************** Frame_logo Logo section*****************/
 
-QWidget .QFrame#frame_2 { /* logo */
+QFrame .QFrame#frame_2 { /* logo */
 
-        border-image: url(':res/images/drkblue/helpthehomeless_logo_horizontal.png');
+        border-image: url(':/images/drkblue/helpthehomeless_logo_horizontal.png');
         border-style:none;
 }
 
