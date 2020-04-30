@@ -498,6 +498,14 @@ public:
 
     /** Find the earliest block with timestamp equal or greater than the given. */
     CBlockIndex* FindEarliestAtLeast(int64_t nTime) const;
+    
+    
+    /**
+     * Return average network hashes per second based on the last 'lookup' blocks,
+     * or from the last difficulty change if 'lookup' is nonpositive.
+     * If 'height' is nonnegative, compute the estimate at the time when a given block was found.
+     */
+    int64_t GetNetworkHashPS(int lookup, int height);
 };
 
 #endif // BITCOIN_CHAIN_H
