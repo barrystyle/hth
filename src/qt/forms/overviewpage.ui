@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1000</width>
-    <height>613</height>
+    <height>560</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -44,9 +44,9 @@
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>330</y>
+        <y>220</y>
         <width>451</width>
-        <height>201</height>
+        <height>311</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -73,7 +73,7 @@
          <property name="sizeHint" stdset="0">
           <size>
            <width>20</width>
-           <height>37</height>
+           <height>41</height>
           </size>
          </property>
         </spacer>
@@ -122,22 +122,6 @@ font-size: 20px;</string>
           </widget>
          </item>
         </layout>
-       </item>
-       <item>
-        <spacer name="verticalSpacer_3">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeType">
-          <enum>QSizePolicy::Fixed</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>50</height>
-          </size>
-         </property>
-        </spacer>
        </item>
        <item>
         <widget class="QFrame" name="frameBlockchainInfoData_3">
@@ -190,6 +174,16 @@ font-size: 20px;</string>
             </property>
            </widget>
           </item>
+          <item row="3" column="3" alignment="Qt::AlignRight">
+           <widget class="QLabel" name="label_Nethash_value_3">
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
           <item row="3" column="1">
            <widget class="QLabel" name="label_CurrentBlock_value_3">
             <property name="minimumSize">
@@ -211,22 +205,28 @@ font-size: 20px;</string>
              <string>0</string>
             </property>
             <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="3">
-           <widget class="QLabel" name="label_Nethash_value_3">
-            <property name="text">
-             <string>0</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             <set>Qt::AlignVCenter</set>
             </property>
            </widget>
           </item>
          </layout>
         </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>135</height>
+          </size>
+         </property>
+        </spacer>
        </item>
       </layout>
      </widget>
@@ -234,7 +234,7 @@ font-size: 20px;</string>
       <property name="geometry">
        <rect>
         <x>470</x>
-        <y>500</y>
+        <y>430</y>
         <width>120</width>
         <height>30</height>
        </rect>
@@ -265,7 +265,7 @@ font-size: 20px;</string>
       <property name="geometry">
        <rect>
         <x>630</x>
-        <y>430</y>
+        <y>350</y>
         <width>120</width>
         <height>30</height>
        </rect>
@@ -302,7 +302,7 @@ font-size: 20px;</string>
       <property name="geometry">
        <rect>
         <x>470</x>
-        <y>430</y>
+        <y>350</y>
         <width>120</width>
         <height>30</height>
        </rect>
@@ -333,7 +333,7 @@ font-size: 20px;</string>
       <property name="geometry">
        <rect>
         <x>630</x>
-        <y>500</y>
+        <y>430</y>
         <width>120</width>
         <height>30</height>
        </rect>
@@ -364,7 +364,7 @@ font-size: 20px;</string>
       <property name="geometry">
        <rect>
         <x>800</x>
-        <y>430</y>
+        <y>350</y>
         <width>120</width>
         <height>30</height>
        </rect>
@@ -394,8 +394,8 @@ font-size: 20px;</string>
      <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
-        <x>460</x>
-        <y>380</y>
+        <x>470</x>
+        <y>280</y>
         <width>151</width>
         <height>41</height>
        </rect>
@@ -411,7 +411,7 @@ font-size: 20px;</string>
       <property name="geometry">
        <rect>
         <x>650</x>
-        <y>380</y>
+        <y>280</y>
         <width>91</width>
         <height>41</height>
        </rect>
@@ -427,7 +427,7 @@ font-size: 20px;</string>
       <property name="geometry">
        <rect>
         <x>790</x>
-        <y>380</y>
+        <y>280</y>
         <width>151</width>
         <height>41</height>
        </rect>
@@ -443,7 +443,7 @@ font-size: 20px;</string>
       <property name="geometry">
        <rect>
         <x>800</x>
-        <y>500</y>
+        <y>430</y>
         <width>120</width>
         <height>30</height>
        </rect>
@@ -474,9 +474,9 @@ font-size: 20px;</string>
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>20</y>
+        <y>10</y>
         <width>345</width>
-        <height>200</height>
+        <height>201</height>
        </rect>
       </property>
       <property name="minimumSize">
@@ -665,8 +665,8 @@ font-size: 20px;</string>
      <widget class="QFrame" name="frame_blue_2">
       <property name="geometry">
        <rect>
-        <x>660</x>
-        <y>20</y>
+        <x>380</x>
+        <y>10</y>
         <width>220</width>
         <height>200</height>
        </rect>
@@ -813,43 +813,29 @@ font-size: 20px;</string>
        </item>
       </layout>
      </widget>
-     <widget class="QLabel" name="label_6">
-      <property name="geometry">
-       <rect>
-        <x>296</x>
-        <y>270</y>
-        <width>401</width>
-        <height>51</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">font-size: 30px;
-color: #debf12;</string>
-      </property>
-      <property name="text">
-       <string>HTH Information</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
      <widget class="QWidget" name="widget" native="true">
       <property name="geometry">
        <rect>
-        <x>9</x>
-        <y>229</y>
-        <width>351</width>
-        <height>91</height>
+        <x>629</x>
+        <y>9</y>
+        <width>341</width>
+        <height>201</height>
        </rect>
       </property>
       <widget class="QFrame" name="frame_2">
        <property name="geometry">
         <rect>
-         <x>29</x>
-         <y>9</y>
+         <x>19</x>
+         <y>59</y>
          <width>301</width>
-         <height>71</height>
+         <height>121</height>
         </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
        </property>
       </widget>
      </widget>
