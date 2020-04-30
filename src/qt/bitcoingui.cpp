@@ -250,18 +250,18 @@ BitcoinGUI::BitcoinGUI(const PlatformStyle *_platformStyle, const NetworkStyle *
    End Status Bar Social Links Not Used  ***/         
 
             
-        QLabel* mcm = new QLabel();
-    mcm->setObjectName(QStringLiteral("github"));
-    mcm->setMinimumSize(QSize(21, 21));
-    mcm->setMaximumSize(QSize(21, 21));
-    mcm->setBaseSize(QSize(0, 0));
-    mcm->setCursor(QCursor(Qt::PointingHandCursor));
-    mcm->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
-    mcm->setOpenExternalLinks(true);
+        QLabel* github = new QLabel();
+    github->setObjectName(QStringLiteral("github"));
+    github->setMinimumSize(QSize(21, 21));
+    github->setMaximumSize(QSize(21, 21));
+    github->setBaseSize(QSize(0, 0));
+    github->setCursor(QCursor(Qt::PointingHandCursor));
+    github->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+    github->setOpenExternalLinks(true);
 #ifndef QT_NO_TOOLTIP
-    mcm->setToolTip(QApplication::translate("OverviewPage", "Visit HTH Github.", nullptr));
+    github->setToolTip(QApplication::translate("OverviewPage", "Visit HTH Github.", nullptr));
 #endif // QT_NO_TOOLTIP
-    mcm->setText(QApplication::translate("OverviewPage", "<a href=\"https://github.com/HTHcoin/HTH-Legacy\"><img src=\":/icons/github\" width=\"21\" height=\"21\"></a>", nullptr));
+    github->setText(QApplication::translate("OverviewPage", "<a href=\"https://github.com/HTHcoin/HTH-Legacy\"><img src=\":/icons/github\" width=\"21\" height=\"21\"></a>", nullptr));
    
             QLabel* twitter = new QLabel();
     twitter->setObjectName(QStringLiteral("twitter"));
@@ -304,7 +304,6 @@ BitcoinGUI::BitcoinGUI(const PlatformStyle *_platformStyle, const NetworkStyle *
              
     frameSocialLayout->addWidget(www);         
     frameSocialLayout->addWidget(github);
-    frameSocialLayout->addWidget(mcm);
     frameSocialLayout->addWidget(twitter);
     frameSocialLayout->addWidget(discord);
    /* frameSocialLayout->addWidget(webs);  // Links Not Used
