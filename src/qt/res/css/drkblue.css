@@ -651,7 +651,7 @@ QStatusBar QLabel {
 
      /*************** ########Frame_blue section########*****************/
 
-     QWidget .QFrame#frame { blue frame */
+ /*    QWidget .QFrame#frame {  blue frame 
 
         border-image: url(':/images_dblue/frame_blue') 0 0 0 0 stretch stretch;
         background-repeat:none;
@@ -660,11 +660,11 @@ QStatusBar QLabel {
         background-repeat: repeat-xy;
         background-position: left center;
 
-        border-style: none;
-     } 
+        border-style: none; 
+     } */
 
 
-    /*************** Frame_blue_1 section*****************/
+    /*************** Frame_blue_4 section*****************/
 
 
     QWidget .QFrame#frame_blue_4 { /*blue frame 1 - total balance */
