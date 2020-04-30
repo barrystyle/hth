@@ -478,35 +478,22 @@
            <height>180</height>
           </size>
          </property>
-         <widget class="QFrame" name="frame_logo">
+         <widget class="QLabel" name="label_6">
           <property name="geometry">
            <rect>
             <x>10</x>
-            <y>40</y>
-            <width>241</width>
-            <height>130</height>
+            <y>70</y>
+            <width>261</width>
+            <height>101</height>
            </rect>
           </property>
-          <property name="minimumSize">
-           <size>
-            <width>220</width>
-            <height>130</height>
-           </size>
+          <property name="styleSheet">
+           <string notr="true">background-image: url(':/images/drkblue/helpthehomeless_logo_horizontal');
+        background-repeat:none;
+        border-style: none;</string>
           </property>
-          <property name="maximumSize">
-           <size>
-            <width>260</width>
-            <height>120</height>
-           </size>
-          </property>
-          <property name="autoFillBackground">
-           <bool>true</bool>
-          </property>
-          <property name="frameShape">
-           <enum>QFrame::StyledPanel</enum>
-          </property>
-          <property name="frameShadow">
-           <enum>QFrame::Raised</enum>
+          <property name="text">
+           <string/>
           </property>
          </widget>
         </widget>
