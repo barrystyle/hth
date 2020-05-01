@@ -842,10 +842,6 @@ color: #debf12;</string>
         <height>111</height>
        </rect>
       </property>
-      <property name="styleSheet">
-       <string notr="true">border-image: url(':res/images/drkblue/helpthehomeless_logo_horizontal.png');
-        border-style:none;</string>
-      </property>
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
       </property>
