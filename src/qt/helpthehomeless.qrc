@@ -376,6 +376,7 @@
         <file alias="drkblue_rightArrow_small">res/images/drkblue/drkblue_rightArrow_small.png</file>
         <file alias="drkblue_qtreeview_selected">res/images/drkblue/drkblue_qtreeview_selected.png</file>
         <file alias="drkblue_walletFrame_bg">res/images/drkblue/drkblue_walletFrame_bg.png</file>
+	<file alias="drkblue_walletFrame_bgA">res/images/drkblue/drkblue_walletFrame_bgA.png</file>
         <file alias="splash">res/images/drkblue/splash.png</file>
         <file alias="splash_testnet">res/images/drkblue/splash_testnet.png</file>
     </qresource>
