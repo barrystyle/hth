@@ -1,10 +1,9 @@
  /*************** Frame_3 Logo section*****************/
 
     QWidget .QFrame#frame_2 { /* logo */
-
-        border-image: url(':/images/light/helpthehomeless_logo_horizontal') 0 0 0 0 stretch stretch;
-        border-style: none;
-    }
+        border-image: url(':/images/drkblue/drkblue_walletFrame_bgA');
+        border-style:none;
+}
 
 /************** End Logo  *********************************/
 
