@@ -7,6 +7,8 @@
 
 #include "amount.h"
 #include "masternodelist.h"
+#include "governancelist.h"
+
 
 #include <QStackedWidget>
 
@@ -21,6 +23,7 @@ class TransactionView;
 class WalletModel;
 class AddressBookPage;
 class OverviewAPage;
+class GovernancePage;
 
 
 
@@ -70,6 +73,7 @@ private:
     AddressBookPage *usedReceivingAddressesPage;
     MasternodeList *masternodeListPage;
     OverviewAPage *overviewAPage;
+    GovernanceList *governanceListPage;
     
     TransactionView *transactionView;
 
@@ -79,6 +83,8 @@ private:
 
 public Q_SLOTS:
 
+    /** Switch to governance page */
+    void gotoGovernancePage();
     /** Switch to private send page */	
     void gotoOverviewAPage();
     /** Switch to overview (home) page */
