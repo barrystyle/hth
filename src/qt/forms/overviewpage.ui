@@ -114,7 +114,7 @@ font-size: 20px;</string>
 font-size: 20px;</string>
            </property>
            <property name="text">
-            <string>Network Hashrate</string>
+            <string>Network Difficulty</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight</set>
@@ -122,6 +122,19 @@ font-size: 20px;</string>
           </widget>
          </item>
         </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
        </item>
        <item>
         <widget class="QFrame" name="frameBlockchainInfoData_3">
@@ -136,19 +149,6 @@ font-size: 20px;</string>
           <enum>QFrame::Raised</enum>
          </property>
          <layout class="QGridLayout" name="gridLayout_5">
-          <item row="3" column="2" alignment="Qt::AlignRight|Qt::AlignVCenter">
-           <widget class="QLabel" name="label_Nethash_3">
-            <property name="styleSheet">
-             <string notr="true">font-size: 15px;</string>
-            </property>
-            <property name="text">
-             <string>Nethash MHs:</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignVCenter</set>
-            </property>
-           </widget>
-          </item>
           <item row="3" column="0">
            <widget class="QLabel" name="label_CurrentBlock">
             <property name="minimumSize">
@@ -168,16 +168,6 @@ font-size: 20px;</string>
             </property>
             <property name="text">
              <string>Current block:</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignVCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="3" alignment="Qt::AlignRight">
-           <widget class="QLabel" name="label_Nethash_value_3">
-            <property name="text">
-             <string>0</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignVCenter</set>
@@ -209,6 +199,29 @@ font-size: 20px;</string>
             </property>
            </widget>
           </item>
+          <item row="3" column="3" alignment="Qt::AlignRight">
+           <widget class="QLabel" name="label_Nethash_value_3">
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="2">
+           <widget class="QLabel" name="label_Nethash_3">
+            <property name="styleSheet">
+             <string notr="true">font-size: 15px;</string>
+            </property>
+            <property name="text">
+             <string>Network Difficulty:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
          </layout>
         </widget>
        </item>
@@ -223,7 +236,7 @@ font-size: 20px;</string>
          <property name="sizeHint" stdset="0">
           <size>
            <width>20</width>
-           <height>170</height>
+           <height>99</height>
           </size>
          </property>
         </spacer>
