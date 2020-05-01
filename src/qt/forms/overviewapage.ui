@@ -97,7 +97,8 @@
               </size>
              </property>
              <property name="styleSheet">
-              <string notr="true">font-size: 20px;</string>
+              <string notr="true">font-size: 20px;
+color: #debf12;</string>
              </property>
              <property name="text">
               <string>Private Send</string>
