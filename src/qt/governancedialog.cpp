@@ -29,7 +29,7 @@
 #endif
 
 #if defined(HAVE_CONFIG_H)
-#include "config/polis-config.h"
+#include "config/helpthehomeless-config.h"
 #endif
 
 #ifdef USE_QRCODE
