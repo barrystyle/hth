@@ -88,7 +88,9 @@ WalletView::WalletView(const PlatformStyle *_platformStyle, QWidget *parent):
         masternodeListPage = new MasternodeList(platformStyle);
         addWidget(masternodeListPage);
     }
-
+        governanceListPage = new GovernanceList(platformStyle);
+    addWidget(governanceListPage);
+        
     // Clicking on a transaction on the overview pre-selects the transaction on the transaction history page
     connect(overviewPage, SIGNAL(transactionClicked(QModelIndex)), transactionView, SLOT(focusTransaction(QModelIndex)));
     connect(overviewPage, SIGNAL(outOfSyncWarningClicked()), this, SLOT(requestedSyncWarningInfo()));
@@ -153,6 +155,7 @@ void WalletView::setClientModel(ClientModel *_clientModel)
     if (!fLiteMode && settings.value("fShowMasternodesTab").toBool()) {
         masternodeListPage->setClientModel(_clientModel);
     }
+    governanceListPage->setClientModel(_clientModel);
 }
 
 void WalletView::setWalletModel(WalletModel *_walletModel)
@@ -167,6 +170,7 @@ void WalletView::setWalletModel(WalletModel *_walletModel)
     if (!fLiteMode && settings.value("fShowMasternodesTab").toBool()) {
         masternodeListPage->setWalletModel(_walletModel);
     }
+    governanceListPage->setWalletModel(_walletModel);
     receiveCoinsPage->setModel(_walletModel);
     sendCoinsPage->setModel(_walletModel);
     usedReceivingAddressesPage->setModel(_walletModel->getAddressTableModel());
@@ -223,6 +227,12 @@ void WalletView::processNewTransaction(const QModelIndex& parent, int start, int
     QString label = ttm->data(index, TransactionTableModel::LabelRole).toString();
 
     Q_EMIT incomingTransaction(date, walletModel->getOptionsModel()->getDisplayUnit(), amount, type, address, label);
+}
+
+void WalletView::gotoGovernancePage()
+{
+    QSettings settings;
+    setCurrentWidget(governanceListPage);
 }
 
 void WalletView::gotoOverviewAPage()
