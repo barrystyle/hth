@@ -102,6 +102,7 @@ private:
 
     QMenuBar *appMenuBar;
     
+    QAction *governanceAction;
     QAction* overviewaAction;
     QAction *overviewAction;
     QAction *historyAction;
@@ -226,6 +227,8 @@ public Q_SLOTS:
 private Q_SLOTS:
 #ifdef ENABLE_WALLET
     
+    /** Switch to masternode page */
+    void gotoGovernancePage();
     /** Switch to private send page */
     void gotoOverviewAPage();
     /** Switch to overview (home) page */
